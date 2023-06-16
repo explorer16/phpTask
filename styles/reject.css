@@ -1,0 +1,30 @@
+div{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 50%;
+    width: 50%;
+    background-color: #6ab1c2;
+    border-radius: 50px;
+}
+img{
+    position: absolute;
+    width: 30%;
+    top: 25%;
+    left: 5%;
+}
+p{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 50%;
+    font-family: "Comic Sans MS";
+}
+button{
+    position: absolute;
+    bottom: 3%;
+    left: 30%;
+    background-color: darkgrey;
+    border-radius: 5px;
+    font-family: "Comic Sans MS";
+}

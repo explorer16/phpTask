@@ -1,0 +1,24 @@
+{
+    "name": "explorer/phptask",
+    "description": "Task from UzInfoCom",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Doniyor Asadullaev",
+            "email": "asadullaevdonier@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Routes\\" : "routes",
+            "Controllers\\" : "controllers",
+            "Models\\" : "models",
+            "Interfaces\\" : "Interfaces"
+        }
+    }
+}
