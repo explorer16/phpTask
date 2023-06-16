@@ -26,7 +26,7 @@ class Router
         if (array_key_exists($this->uri, $this->routes)&&isset($_COOKIE['name'])&&isset($_COOKIE['email'])){
             require_once($this->routes[$this->uri]);
         } else {
-            require_once 'views/404.html';
+            require_once 'controllers/loginController.php';
         }
     }
 }

@@ -11,6 +11,9 @@ if($room_info['is_reserved']==0){
         $_COOKIE['name'],
         $_COOKIE['email']
     );
+
+    \Models\Sendmail::sendAcceptMail($_COOKIE['email']);
+
     require_once 'views/reservAcceptView.html';
 } else {
     require_once 'views/reservRejectView.html';
