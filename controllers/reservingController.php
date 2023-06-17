@@ -12,7 +12,7 @@ $room->reserving(
     $reserved_for
 );
 
-\Models\Sendmail::sendMail(
+\Models\Sendmail::send(
     $_COOKIE['name'],
     $_COOKIE['email'],
     $_COOKIE['floor'].'.'.$_COOKIE['room'],

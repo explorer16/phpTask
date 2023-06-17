@@ -10,18 +10,8 @@ if($room_info['is_reserved']==0){
 
     require_once 'views/reservForm.html';
 
-    /*$room->reserving(
-        $_GET['id_room'],
-        $_GET['id_floor'],
-        $_COOKIE['name'],
-        $_COOKIE['email']
-    );
-
-    \Models\Sendmail::sendAcceptMail($_COOKIE['email']);
-
-    require_once 'views/reservAcceptView.html';*/
 } else {
-    \Models\Sendmail::sendMail(
+    \Models\Sendmail::send(
         $room_info['username'],
         $_COOKIE['email'],
         $_GET['id_floor'].'.'.$_GET['id_room'],

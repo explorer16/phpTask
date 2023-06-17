@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/form.css">
     <title>Form</title>
 </head>
 <body>
 <form action="/reserving" method="post">
-    <br>До скольки?
-    <br><input type="date" name="reserved_date_for"> Введите дату
-    <br><input type="time" name="reserved_time_for"> Введите время
-    <br><input type="submit" value="Забронировать">
+    <h1>До скольки?</h1>
+    <input type="time" name="reserved_time_for" class="time"><p class="time-txt">Введите время</p>
+    <input type="date" name="reserved_date_for" class="date"><p class="date-txt">Введите дату</p>
+    <input type="submit" value="Забронировать" class="btn">
 </form>
 </body>
 </html>

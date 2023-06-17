@@ -4,8 +4,56 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a835c712bbd406355a2f51ec92f27df2",
-    "packages": [],
+    "content-hash": "a1052e42c6033f1a1a98bec51dbcf5b0",
+    "packages": [
+        {
+            "name": "instasent/instasent-php-lib",
+            "version": "0.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/instasent/instasent-php-lib.git",
+                "reference": "3a8a55d157751f8f8443a3a02c98ca7b8faee6bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/instasent/instasent-php-lib/zipball/3a8a55d157751f8f8443a3a02c98ca7b8faee6bc",
+                "reference": "3a8a55d157751f8f8443a3a02c98ca7b8faee6bc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Instasent\\": "src/Instasent"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcos Gómez",
+                    "email": "marcos@instasent.com"
+                }
+            ],
+            "description": "A PHP wrapper library for Instasent's API",
+            "homepage": "http://github.com/instasent/instasent-php-lib",
+            "keywords": [
+                "api",
+                "instasent",
+                "lookup",
+                "sms"
+            ],
+            "support": {
+                "issues": "https://github.com/instasent/instasent-php-lib/issues",
+                "source": "https://github.com/instasent/instasent-php-lib/tree/0.1.4"
+            },
+            "time": "2020-07-24T09:07:46+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",

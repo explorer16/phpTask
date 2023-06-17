@@ -1,0 +1,39 @@
+form{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 50%;
+    width: 50%;
+    background-color: #6ab1c2;
+    border-radius: 50px;
+}
+h1{
+    position: absolute;
+    left: 35%;
+}
+.date{
+    position: absolute;
+    top: 50%;
+    left: 39%;
+}
+.time{
+    position: absolute;
+    top: 30%;
+    left: 42%;
+}
+.time-txt{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+.date-txt{
+    position: absolute;
+    top: 55%;
+    left: 41%;
+}
+.btn{
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+
+}
