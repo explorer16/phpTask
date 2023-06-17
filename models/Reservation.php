@@ -33,20 +33,19 @@ class Reservation implements ReservationInterface
      * @param $email
      * @return void
      */
-    public function reserving($id_room, $id_floor, $name, $email):void
+    public function reserving($id_room, $id_floor, $name, $email, $reserved_for):void
     {
         $conn = new \PDO('mysql:dbname=phptask;host=127.0.0.1', 'root', '');
 
         $statement = $conn->prepare('UPDATE rooms 
                     SET username = :name, 
                         reserved_at = FROM_UNIXTIME(:reserved_at), 
-                        reserved_for = FROM_UNIXTIME(:reserved_for), 
+                        reserved_for = :reserved_for, 
                         is_reserved = 1
                     WHERE id_room = :room AND id_floor = :floor
                    ');
 
         $reserved_at = time();
-        $reserved_for = time()+3600;
 
         $statement->bindParam('name', $name, \PDO::PARAM_STR);
         $statement->bindParam('reserved_at', $reserved_at);

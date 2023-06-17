@@ -9,12 +9,14 @@ class Router
     private $routes= [
         '/' => 'controllers/loginController.php',
         '/main' => 'controllers/preparingRoomsController.php',
-        '/reserving' => 'controllers/checkingRoomController.php'
+        '/checking' => 'controllers/checkingRoomController.php',
+        '/reserving' => 'controllers/reservingController.php'
     ];
 
     private function getUri()
     {
         $url=$_SERVER['REQUEST_URI'];
+        str_replace('/phpTask', '', $url);
         $url=explode('?', $url);
         $this->uri=$url[0];
     }
